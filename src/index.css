@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'KnewaveRegular', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -31,4 +31,24 @@ html, body {
 
 .font-knewave {
   font-family: 'KnewaveRegular';
+}
+
+.thank-you > * {
+  font-size: 15vh;
+  width: 100vw;
+  text-align: center;
+  top: calc(50vh - 15vh);
+}
+
+@media (orientation: landscape) {
+  .thank-you {
+    white-space: nowrap;
+  }
+}
+
+@media (orientation: portrait) {
+  .thank-you {
+    line-height: 1;
+    white-space: unset;
+  }
 }

@@ -27,24 +27,22 @@ function App() {
         pointerColor={white}
         blendingValue={blendingValue}
       />
-      <div className="absolute top-0 w-full h-full">
+      <div className="absolute top-0 w-full h-full overflow-hidden">
         <CardContainer className="inter-var w-full h-full">
-          <CardBody className="relative group/card w-1/2 h-1/2">
-            <div className="relative font-knewave px-0 py-28 pointer-events-none text-5xl text-center leading-normal md:text-7xl md:leading-normal lg:text-9xl lg:leading-normal">
-              <CardItem translateZ="50" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="55" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="60" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="65" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="70" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="75" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="80" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="85" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="90" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem translateZ="95" className="w-full absolute text-shadow">{message}</CardItem>
-              <CardItem as={"h1"} translateZ="100" className="w-full absolute text-shadow text-white">
-                {message}
-              </CardItem>
-            </div>
+          <CardBody className="relative group/card w-full h-full font-knewave pointer-events-none thank-you">
+            <CardItem translateZ="50" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="55" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="60" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="65" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="70" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="75" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="80" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="85" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="90" className="absolute text-shadow">{message}</CardItem>
+            <CardItem translateZ="95" className="absolute text-shadow">{message}</CardItem>
+            <CardItem as={"h1"} translateZ="100" className="absolute text-shadow text-white">
+              {message}
+            </CardItem>
           </CardBody>
         </CardContainer>
       </div>
