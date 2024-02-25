@@ -27,7 +27,7 @@ function App() {
         pointerColor={white}
         blendingValue={blendingValue}
       />
-      <div className="absolute top-0 w-full h-full overflow-hidden">
+      <div className="absolute top-0 w-full h-full">
         <CardContainer className="inter-var w-full h-full">
           <CardBody className="relative group/card w-full h-full font-knewave pointer-events-none thank-you">
             <CardItem translateZ="50" className="absolute text-shadow">{message}</CardItem>
