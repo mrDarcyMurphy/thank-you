@@ -57,7 +57,6 @@ export const CardContainer = ({
         }}
       >
         <div
-          id="orange"
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
           onMouseMove={handleMouseMove}
