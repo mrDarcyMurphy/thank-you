@@ -34,14 +34,14 @@ function App() {
         <CardContainer className="w-full">
           <CardBody className="group/card pointer-events-none">
             <div className="h-full flex items-center justify-center text-center thank-you font-league-script">
-              <CardItem translateZ="65" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="70" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="75" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="80" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="85" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="90" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem translateZ="95" className="absolute p-4 opacity-95">{message}</CardItem>
-              <CardItem as={"h1"} translateZ="100" className="absolute p-4 text-glow">{message}</CardItem>
+              <CardItem translateZ="65" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="70" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="75" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="80" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="85" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="90" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem translateZ="95" className="absolute p-8 opacity-95">{message}</CardItem>
+              <CardItem as={"h1"} translateZ="100" className="absolute p-8 text-glow">{message}</CardItem>
             </div>
           </CardBody>
         </CardContainer>

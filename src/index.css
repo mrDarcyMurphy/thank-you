@@ -31,6 +31,7 @@ html, body {
 
 .thank-you {
   font-size: 10vh;
+  line-height: 1;
 }
 
 @media (orientation: landscape) {
