@@ -1,6 +1,6 @@
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-
+import { WavyBackground } from "./ui/wavy-background";
 
 const bgStart = "rgb(0,0,0)"
 const bgEnd = "rgb(0,104,140)"
@@ -11,6 +11,8 @@ const white = "255,255,255"
 const blendingValue = "screen" // overlay | screen | hard-light
 
 const message = "Thank you!"
+
+const colors = [`rgb(${cyan})`, `rgb(${magenta})`, `rgb(${yellow})`]
 
 function App() {
 
@@ -26,8 +28,12 @@ function App() {
         fifthColor={magenta}
         pointerColor={white}
         blendingValue={blendingValue}
+        className="absolute"
       />
-      <div className="absolute top-0 w-full h-full">
+      <div className="absolute top-0">
+        <WavyBackground waveWidth={5} colors={colors} className="max-w-4xl mx-auto pb-40 absolute top-0" />
+      </div>
+      <div className="absolute top-0 w-full h-full z-20">
         <CardContainer className="inter-var w-full h-full">
           <CardBody className="relative group/card w-full h-full font-knewave pointer-events-none thank-you">
             <CardItem translateZ="50" className="absolute text-shadow">{message}</CardItem>
